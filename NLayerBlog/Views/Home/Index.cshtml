@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Blog>
+
+@if(Model == null)
+{
+    <div class="text-danger">Blog not found</div>
+}
+else
+{
+    @foreach(var item in Model)
+    {
+        <div class="card mb-3" >
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="@item.Image" class="img-fluid rounded-start" alt="@item.BlogTitle">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.BlogTitle</h5>
+                        <p class="card-text">@item.BlogShortDescription</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

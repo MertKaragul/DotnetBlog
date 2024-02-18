@@ -1,0 +1,25 @@
+﻿@model LoginViewModel
+
+<form id="login-form">
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email address</label>
+        <input asp-for="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="form-label">Password</label>
+        <input asp-for="Password" class="form-control">
+    </div>
+    <div class="mb-3 form-check">
+        <input asp-for="IsRemember" class="form-check-input">
+        <label asp-for="IsRemember" class="form-check-label">Rememeber me</label>
+    </div>
+    <button class="btn btn-primary" id="login-button" type="submit">Giriş yap</button>
+</form>
+
+
+
+
+@section Scripts {
+    <script src="~/js/UserLogin.js" defer></script>
+}
