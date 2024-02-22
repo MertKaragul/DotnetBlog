@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{47E25FCC-CFEE-4502-808D-B39DD8FC0505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerBlogApi", "NLayerBlogApi\NLayerBlogApi.csproj", "{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerBlogApi", "NLayerBlogApi\NLayerBlogApi.csproj", "{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

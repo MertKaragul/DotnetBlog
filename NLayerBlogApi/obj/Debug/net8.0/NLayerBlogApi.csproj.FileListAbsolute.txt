@@ -143,3 +143,4 @@ C:\Users\Mertk\source\repos\NLayerBlog\NLayerBlogApi\obj\Debug\net8.0\ref\NLayer
 C:\Users\Mertk\source\repos\NLayerBlog\NLayerBlogApi\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Mertk\source\repos\NLayerBlog\NLayerBlogApi\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Mertk\source\repos\NLayerBlog\NLayerBlogApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Mertk\source\repos\NLayerBlog\NLayerBlogApi\obj\Debug\net8.0\NLayerBlogApi.sourcelink.json

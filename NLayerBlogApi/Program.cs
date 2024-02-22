@@ -27,10 +27,18 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 });
 
+
+
+
+
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IGenericService<>), typeof(Service<>));
+builder.Services.AddScoped(typeof(IJwtService), typeof(JwtService));
 builder.Services.AddAutoMapper(typeof(MapperService));
 builder.Services.AddScoped<IValidator<User>, UserValidation>();
+
+
+
 
 var app = builder.Build();
 
