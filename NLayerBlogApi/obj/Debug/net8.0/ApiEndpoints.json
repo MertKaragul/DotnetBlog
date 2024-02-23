@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "NLayerBlogApi.Controllers.BlogsController.BlogsController",
+    "Method": "GetBlogs",
+    "RelativePath": "api/Blogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NLayerBlogApi.Controllers.BlogsController.BlogsController",
+    "Method": "CreateBlog",
+    "RelativePath": "api/Blogs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBlogDto",
+        "Type": "Core.Dtos.BlogDto.CreateBlogDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NLayerBlogApi.Controllers.UserControllers.UserController",
+    "Method": "CreateAccessToken",
+    "RelativePath": "api/User/CreateAccessToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NLayerBlogApi.Controllers.UserControllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Core.Dtos.LoginDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NLayerBlogApi.Controllers.UserControllers.UserController",
+    "Method": "ValidateUser",
+    "RelativePath": "api/User/ValidateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

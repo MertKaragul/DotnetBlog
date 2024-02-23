@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Core.Dtos;
+using Core.Dtos.BlogDto;
 using Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.Mapper {
+namespace Service.Mapper
+{
     public class MapperService : Profile {
         public MapperService()
         {
@@ -25,6 +27,8 @@ namespace Service.Mapper {
 
             CreateMap<Blog, BlogDto>()
                 .ReverseMap();
+
+            CreateMap<CreateBlogDto, Blog>().ReverseMap();
         }
     }
 }

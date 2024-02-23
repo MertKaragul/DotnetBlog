@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -19,7 +20,7 @@ namespace Service.Service {
         public JwtService(IConfiguration configuration)
         {
             _configuration = configuration;
-            _symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]));
+            _symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
         }
 
 
@@ -40,27 +41,29 @@ namespace Service.Service {
         }
 
 
-        public IEnumerable<Claim>? ValidateToken(string token)
+        public async Task<IDictionary<string, object>?> ValidateToken(string token)
         {
             try
             {
-                var validate = new JwtSecurityTokenHandler()
-                .ValidateToken(token,
-                new TokenValidationParameters
+                var tokenHandler = new JwtSecurityTokenHandler();
+
+                var validate = await tokenHandler.ValidateTokenAsync(token,
+                new TokenValidationParameters()
                 {
                     ValidateAudience = true,
                     ValidateIssuer = true,
                     ValidateIssuerSigningKey = true,
                     ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero,
+                    ValidIssuer = _configuration["Jwt:Issuer"],
+                    ValidAudience = _configuration["Jwt:Audience"],
                     IssuerSigningKey = _symmetricSecurityKey
-                }, out SecurityToken validatedToken);
+                });
 
-                var jwtToken = (JwtSecurityToken)validatedToken;
-                return jwtToken.Claims;
+                return validate.Claims;
             }
-            catch
+            catch(Exception ex)
             {
+                Debug.WriteLine(ex);
                 return null;
             }
         }

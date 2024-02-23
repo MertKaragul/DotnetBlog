@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\nlayerblogapi\\controllers\\blogscontroller\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|solutionrelative:nlayerblogapi\\controllers\\blogscontroller\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\nlayerblogapi\\controllers\\userscontrollers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|solutionrelative:nlayerblogapi\\controllers\\userscontrollers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E25FCC-CFEE-4502-808D-B39DD8FC0505}|Service\\Service.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\service\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E25FCC-CFEE-4502-808D-B39DD8FC0505}|Service\\Service.csproj|solutionrelative:service\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\nlayerblogapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|solutionrelative:nlayerblogapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498F9903-1E7A-41B1-BA66-611977AA277E}|Core\\Core.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\core\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498F9903-1E7A-41B1-BA66-611977AA277E}|Core\\Core.csproj|solutionrelative:core\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498F9903-1E7A-41B1-BA66-611977AA277E}|Core\\Core.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\core\\dtos\\blogdto\\createblogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498F9903-1E7A-41B1-BA66-611977AA277E}|Core\\Core.csproj|solutionrelative:core\\dtos\\blogdto\\createblogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\nlayerblogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDCBEC9-ED7E-4248-9180-F2087D1703D9}|NLayerBlogApi\\NLayerBlogApi.csproj|solutionrelative:nlayerblogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498F9903-1E7A-41B1-BA66-611977AA277E}|Core\\Core.csproj|c:\\users\\mkaragul\\source\\repos\\dotnetblog\\core\\dtos\\blogdto\\blogvalidatordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498F9903-1E7A-41B1-BA66-611977AA277E}|Core\\Core.csproj|solutionrelative:core\\dtos\\blogdto\\blogvalidatordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\Controllers\\UsersControllers\\UserController.cs",
+              "RelativeDocumentMoniker": "NLayerBlogApi\\Controllers\\UsersControllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\Controllers\\UsersControllers\\UserController.cs",
+              "RelativeToolTip": "NLayerBlogApi\\Controllers\\UsersControllers\\UserController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAowEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T13:36:36.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Service\\Service\\JwtService.cs",
+              "RelativeDocumentMoniker": "Service\\Service\\JwtService.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Service\\Service\\JwtService.cs",
+              "RelativeToolTip": "Service\\Service\\JwtService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA1wCsAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T13:36:25.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "NLayerBlogApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\appsettings.Development.json",
+              "RelativeToolTip": "NLayerBlogApi\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-23T13:35:40.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Enums\\Roles.cs",
+              "RelativeDocumentMoniker": "Core\\Enums\\Roles.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Enums\\Roles.cs",
+              "RelativeToolTip": "Core\\Enums\\Roles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T12:50:22.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\Program.cs",
+              "RelativeDocumentMoniker": "NLayerBlogApi\\Program.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\Program.cs",
+              "RelativeToolTip": "NLayerBlogApi\\Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAUwEAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T12:01:33.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogValidatorDto.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Dtos\\BlogDto\\BlogValidatorDto.cs",
+              "RelativeDocumentMoniker": "Core\\Dtos\\BlogDto\\BlogValidatorDto.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Dtos\\BlogDto\\BlogValidatorDto.cs",
+              "RelativeToolTip": "Core\\Dtos\\BlogDto\\BlogValidatorDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T11:52:47.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogsController.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\Controllers\\BlogsController\\BlogsController.cs",
+              "RelativeDocumentMoniker": "NLayerBlogApi\\Controllers\\BlogsController\\BlogsController.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\NLayerBlogApi\\Controllers\\BlogsController\\BlogsController.cs",
+              "RelativeToolTip": "NLayerBlogApi\\Controllers\\BlogsController\\BlogsController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAcwEcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T11:37:32.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateBlogDto.cs",
+              "DocumentMoniker": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Dtos\\BlogDto\\CreateBlogDto.cs",
+              "RelativeDocumentMoniker": "Core\\Dtos\\BlogDto\\CreateBlogDto.cs",
+              "ToolTip": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Dtos\\BlogDto\\CreateBlogDto.cs",
+              "RelativeToolTip": "Core\\Dtos\\BlogDto\\CreateBlogDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T11:20:30.243Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

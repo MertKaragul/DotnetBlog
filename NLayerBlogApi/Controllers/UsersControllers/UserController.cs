@@ -64,8 +64,7 @@ namespace NLayerBlogApi.Controllers.UserControllers {
                 new Claim(ClaimTypes.NameIdentifier, findUser.UserId.ToString()),
                 new Claim(ClaimTypes.Name, findUser.UserName.ToString()),
                 new Claim(ClaimTypes.Email, findUser.Email.ToString()),
-                new Claim(ClaimTypes.Role, findUser.Roles.ToString()),
-
+                new Claim(ClaimTypes.Role, "ADMIN"),
             };
 
             // Access token
@@ -80,21 +79,24 @@ namespace NLayerBlogApi.Controllers.UserControllers {
                 CustomResponseDto<TokenResponseDto>.Success(
                     data: new TokenResponseDto { 
                         AccessToken = accessToken,
-                        RefreshToken = refreshToken},
-                    statusCode: 200));
+                        RefreshToken = refreshToken
+                    },
+                    statusCode: 200)
+                );
         }
 
 
         [HttpPost]
         [AllowAnonymous]
-        public ActionResult ValidateUser(string? token)
+        public async Task<ActionResult> ValidateUser(string? token)
         {
             if(token == null)
             {
                 return BadRequest();
             }
-            var validate = _jwtService.ValidateToken(token);
-            if(!validate.IsNullOrEmpty())
+            var validate = await _jwtService.ValidateToken(token);
+            
+            if(validate.IsNullOrEmpty())
             {
                 return Unauthorized();
             }
@@ -104,24 +106,64 @@ namespace NLayerBlogApi.Controllers.UserControllers {
 
         [HttpPost]
         [AllowAnonymous]
-        public ActionResult CreateAccessToken(string? refreshToken)
+        public async Task<ActionResult> CreateAccessToken(string? refreshToken)
         {
             if(refreshToken == null) return BadRequest();
             
-            var validateToken = _jwtService.ValidateToken(refreshToken);
+            var validateToken = await _jwtService.ValidateToken(refreshToken.Trim());
 
-            if(!validateToken.IsNullOrEmpty() || validateToken == null)
+            if(validateToken.IsNullOrEmpty() ||
+                validateToken == null)
             {
-                return Unauthorized();
+                return CustomResponse(
+                new CustomResponseDto<string>
+                {
+                    Errors = new List<String> {
+                        "Unauthorized"
+                    },
+                    StatusCode = 401,
+                }
+              );
             }
 
-            if(validateToken.FirstOrDefault(x => x.ValueType.Contains("IsRefreshToken")) == null)
+            var findRefeshToken = validateToken.Keys.FirstOrDefault(x => x.Contains("IsRefreshToken"));
+
+            if (findRefeshToken == null)
             {
-                return BadRequest("Just only refresh-token sendable");
+                return CustomResponse(
+                new CustomResponseDto<string>
+                {
+                    Errors = new List<String> { " Only refresh token generate new access token " },
+                    StatusCode = 400,
+                }
+              );
+            }
+            else
+            {
+                validateToken.Remove(findRefeshToken);
+                validateToken.Remove("aud");
+                validateToken.Remove("iss");
             }
 
-            var generateToken = _jwtService.CreateToken(validateToken, DateTime.Now.AddDays(int.Parse(_configuration["JWT:Expire"])));
-            return Ok(generateToken);
+            var generateToken = _jwtService.CreateToken(validateToken.Select(x =>
+            {
+                return new Claim(x.Key.ToString(), x.Value.ToString());
+
+            }).AsEnumerable(), DateTime.Now.AddDays(int.Parse(_configuration["JWT:Expire"])));
+
+
+
+            return CustomResponse(
+                new CustomResponseDto<TokenResponseDto>
+                {
+                    Data = new TokenResponseDto
+                    {
+                        AccessToken = generateToken,
+                        RefreshToken = refreshToken
+                    },
+                    StatusCode = 200,
+                }
+              );
         }
 
 
