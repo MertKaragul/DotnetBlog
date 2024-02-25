@@ -11,6 +11,7 @@ namespace Core.Dtos.BlogDto
         public string? BlogTitle { get; set; }
         public string? BlogShortDescription { get; set; }
         public string? BlogDescription { get; set; }
-        public string? BlogImage { get; set; }
+        public string? Image { get; set; }
     }
 }
+ 

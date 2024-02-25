@@ -2,6 +2,7 @@ using Core.Dtos.BlogDto;
 using Core.Entities;
 using Core.Repository;
 using Core.Service;
+using Core.UnitOfWork;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ using Repository;
 using Repository.GenericRepository;
 using Service.Mapper;
 using Service.Service;
+using Service.UnitOfWork;
 using System.Reflection;
 using System.Text;
 
@@ -30,12 +32,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     {
         options.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
     });
-
 });
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IGenericService<>), typeof(Service<>));
+builder.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
 builder.Services.AddScoped(typeof(IJwtService), typeof(JwtService));
+
+
+
+
 builder.Services.AddAutoMapper(typeof(MapperService));
 builder.Services.AddScoped<IValidator<User>, UserValidation>();
 builder.Services.AddScoped<IValidator<CreateBlogDto>, BlogDtoValidator>();
@@ -98,6 +104,8 @@ if(app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseStaticFiles();
 
 app.MapControllers();
 

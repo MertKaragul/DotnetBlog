@@ -11,10 +11,10 @@ namespace Core.Dtos.BlogDto
     {
         public BlogDtoValidator()
         {
-            RuleFor(x => x.BlogTitle).Empty().WithMessage("Blog title required");
-            RuleFor(x => x.BlogShortDescription).Empty().WithMessage("Blog short description required");
-            RuleFor(x => x.BlogDescription).Empty().WithMessage("Blog description required");
-            RuleFor(x => x.BlogImage).Empty().WithMessage("Blog image required");
+            RuleFor(x => x.BlogTitle).NotEmpty().WithMessage("Blog title required");
+            RuleFor(x => x.BlogShortDescription).NotEmpty().WithMessage("Blog short description required");
+            RuleFor(x => x.BlogDescription).NotEmpty().WithMessage("Blog description required");
+            RuleFor(x => x.Image).NotEmpty().WithMessage("Blog image required");
         }
     }
 }

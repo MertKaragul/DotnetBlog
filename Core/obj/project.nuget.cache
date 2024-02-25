@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "FbJVt14K4/I34AknCOAg1EyWhQmXd0vScfWePMU4qDzRteFJLw9l5faVYzAOCso7n3wSGENc0dwQjLOuZxOgVw==",
+  "dgSpecHash": "91LCz7jkHPPHrJ6Pnd3ZkIqIm3vUcB/O6J09skRrU4MRBDJM3/i9365q5biEMQRZcUpa+X9K8cR3a3WWD53bBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Core\\Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mkaragul\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
-    "C:\\Users\\mkaragul\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
-    "C:\\Users\\mkaragul\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "C:\\Users\\Mertk\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\Mertk\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\Mertk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }

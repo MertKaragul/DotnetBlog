@@ -2804,24 +2804,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mkaragul\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Mertk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Service\\Service.csproj",
-      "packagesPath": "C:\\Users\\mkaragul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Service\\obj\\",
+      "projectPath": "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Service\\Service.csproj",
+      "packagesPath": "C:\\Users\\Mertk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Service\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mkaragul\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Mertk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2835,11 +2830,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Core\\Core.csproj"
+            "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Core\\Core.csproj"
             },
-            "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\mkaragul\\source\\repos\\DotnetBlog\\Repository\\Repository.csproj"
+            "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Mertk\\source\\repos\\NLayerBlog\\Repository\\Repository.csproj"
             }
           }
         }
@@ -2848,11 +2843,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2880,7 +2870,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

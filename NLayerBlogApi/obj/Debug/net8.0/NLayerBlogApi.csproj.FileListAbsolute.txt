@@ -291,3 +291,4 @@ C:\Users\mkaragul\source\repos\DotnetBlog\NLayerBlogApi\obj\Debug\net8.0\NLayerB
 C:\Users\mkaragul\source\repos\DotnetBlog\NLayerBlogApi\obj\Debug\net8.0\NLayerBlogApi.genruntimeconfig.cache
 C:\Users\mkaragul\source\repos\DotnetBlog\NLayerBlogApi\obj\Debug\net8.0\ref\NLayerBlogApi.dll
 C:\Users\mkaragul\source\repos\DotnetBlog\NLayerBlogApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mertk\source\repos\NLayerBlog\NLayerBlogApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
